@@ -19,5 +19,13 @@ If you prefer to edit LaTeX documents locally, and track through git
 (base) base_path % cd your_path/your_folder_name
 (base) .../your_folder_name % git clone https://github.com/m-sgstyb/thesisTemplate-uniOfOxford.git
 ```
-For local documents, I use Sublime Text for text editing, and use Skim to build the PDF file.
+
+For local documents, I like [Sublime Text](https://www.sublimetext.com/) for text editing, and use [Skim](https://skim-app.sourceforge.io/) to build the PDF file in MacOS (for Windows, using Sublime Text and [Sumatra PDF](https://www.sumatrapdfreader.org/download-free-pdf-viewer) should work).
+
+Every text file in the repository has the line 
+```
+%!TEX root = ../Oxford_Thesis.tex
+
+```
+added at the top, so when writing, you can compile the pdf directly from the text file you're working in without having to open the main Oxford_Thesis.tex file.
 
