@@ -7,9 +7,9 @@
 % Originally by Keith A. Gillow (gillow@maths.ox.ac.uk), 1997
 % Modified by Sam Evans (sam@samuelevansresearch.org), 2007
 % Modified by John McManigle (john@oxfordechoes.com), 2015
-% Modified by Mónica Sagastuy-Breña (m.sgstyb@gmail.com), 2024
+% Modified by Mónica Sagastuy-Breña (m.sgstyb@gmail.com), 2025
 %
-% This version Copyright (c) 2024 Mónica Sagastuy-Breña
+% This version Copyright (c) 2025 Mónica Sagastuy-Breña
 %
 % Broad permissions are granted to use, modify, and distribute this software
 % as specified in the MIT License included in this distribution's LICENSE file.
@@ -51,10 +51,14 @@
 % Please add the following required packages to your document preamble:
 \usepackage[justification=centering, labelfont=bf]{caption}
 \usepackage{multirow}
+\usepackage{svg}
+% Define the paths for svg files to be saved in so it searches accordingly when compiling locally
+% Insert any path where the figures might be. When calling includesvg[width=\linewidth]{svgfilename}
+% Just use the filename without a path, and without the .svg filetype
+\svgpath{{figures/ch3/}{figures/ch4/}{figures/ch5/}{figures/litreview/}{figures/appendix/}}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{float}
-
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{titlesec}
