@@ -121,11 +121,8 @@ When the PDF is compiled in Skim, you can use `Cmd` + `Shift` + click in a locat
 Generally, adding png or pdf files as images for figures is easy with `\includegraphics` command. However, if needed, svg files may be added with the svg package. I have included in the preamble of this template the following:
 ```
 \usepackage{svg}
-% Define the paths for svg files to be saved in so it searches accordingly when compiling locally
-% Insert any path where the figures might be. When calling includesvg[width=\linewidth]{svgfilename}
-% Just use the filename without a path, and without the .svg filetype
-\svgpath{{figures/ch3/}{figures/ch4/}{figures/ch5/}{figures/litreview/}{figures/appendix/}}
 ```
+As well as the svgpath listing all the possible locations where the svg files may be found. If adding new figure folders, this line should be updated.
 Comment or remove if not using svg files, the svgpath command will allow the local compiling process to find the converted files to include in the final pdf document, but is not required if running through Overleaf.
 
 > [!important]
