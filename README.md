@@ -43,7 +43,8 @@ To use SVG Figures *(Optional, and more detailed instructions below)*
 
 2. Add the Inkscape path in LaTeXTools settings and enable -shell-escape.
 
-> [!note] This quickstart allows a user to build a PDF immediately; read the full instructions below for detailed setup, cross-platform notes, and svg handling.
+> [!note]
+> This quickstart allows a user to build a PDF immediately; read the full instructions below for detailed setup, cross-platform notes, and svg handling.
 
 ## Using this template
 ### Overleaf and Zotero
