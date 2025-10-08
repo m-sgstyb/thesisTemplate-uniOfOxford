@@ -164,3 +164,7 @@ If instead of MacOS, for Windows or Linux the path should be something like this
 }
 ```
 
+## Final notes
+
+This repository also includes the splitcolor.py script from the [original template](https://github.com/mcmanigle/OxThesis); this separates the thesis into two PDFs - one with the greyscale pages and one with all the coloured pages, which would help reduce printing costs if a physical copy is needed. 
+
