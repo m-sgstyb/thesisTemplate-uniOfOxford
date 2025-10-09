@@ -2,11 +2,11 @@
 
 This template is a slightly re-formatted version of the _ociamthesis_ document class and thesis template developed originally by Keith A. Gillow, later modified by Sam Evans and [John McManigle](https://github.com/mcmanigle/OxThesis) before the present version. It is therefore covered by the MIT License, included in the LICENSE file.
 
-I have added instructions for the use of this template with on and offline options below in detail; the setup for offline compiling will need some additional reading and downloads, please read through the isntallation instructions especially for LaTeXTools listed below carefully for the proper setup of Sublime Text with Skim, this will be more comprehensive.
+I have added instructions for the use of this template with on and offline options below in detail; the setup for offline compiling will need some additional reading and downloads, please read through the installation instructions especially for LaTeXTools listed below and the blog post linked for setting up Sublime Text with Skim carefully, as this provides more detail.
 
 ## Quick Setup / Run in a Few Steps
 
-If you just want to start compiling the thesis with minimal setup and if you have some experience with LaTeX follow the next steps. These are more detailed with specific notes on installations and including svg in [#Using this template]
+If you just want to start compiling the thesis with minimal setup and if you have some experience with LaTeX follow the next steps. These are more detailed with specific notes on installations and including svg in [Using this template](https://github.com/m-sgstyb/thesisTemplate-uniOfOxford?tab=readme-ov-file#using-this-template).
 
 ### Overleaf Option (Simplest)
 
@@ -29,7 +29,7 @@ git clone https://github.com/m-sgstyb/thesisTemplate-uniOfOxford.git
 ```
 cd thesisTemplate-uniOfOxford
 ```
-1. Open Sublime Text, install LaTeXTools and check that Skim is correctly set up to build with Sublime. A quick guide on this can be found [here](https://jj09.net/latex-with-sublimetext-and-skim/)
+1. Open Sublime Text, install LaTeXTools and check that Skim is correctly set up to build with Sublime. A quick guide on this can be found in the post [here](https://jj09.net/latex-with-sublimetext-and-skim/)
 
 2. Open the full downloaded folder for the thesis template in Sublime Text. Click on a tex file, e.g. Oxford_Thesis.tex
 
@@ -61,12 +61,11 @@ If you prefer to edit LaTeX documents locally, and track through git for example
 
 > [!note]
 > 
-> Spending some time doing the below will allow the possibility to work offline on your project; I suggest periodically keeping a downloaded copy of your Overleaf document if you are using both options, or downloading it when you know you will need to be editing offline. 
-> You may also just entirely prefer to work offline.
-
+> Spending some time doing the below will allow the possibility to work offline on your project; you can manually periodically keep a downloaded copy of your Overleaf document if you are using both options together, or downloading it when you know you will need to be editing offline to upload it again if using the free version of Overleaf
+> See the section below on working on and offline for the GitHub sync integration for more seamless work between platforms.
 
 For local documents, I like [Sublime Text](https://www.sublimetext.com/) for text editing, and use [Skim](https://skim-app.sourceforge.io/) to build the PDF file in MacOS.
-For Windows or Linux, different setups may be required (e.g., SumatraPDF, Okular, or Evince as PDF viewers; MiKTeX or TeX Live for LaTeX distribution).
+For Windows or Linux, different setups may be required, which I have not personally tested (e.g., SumatraPDF, Okular, or Evince as PDF viewers; MiKTeX or TeX Live for LaTeX distribution).
 
 For referencing you may still use Zotero, either by downloading the Overleaf created bib file if you started there, or you may use [BetterBibTex](https://retorque.re/zotero-better-bibtex/) in Zotero to export all your library or any subset of it to a bib file. BetterBibTex will provide a link that you need to copy and paste into the search bar to start the download. You can then just add that bib file with the name references.bib into your project root.
 
@@ -116,6 +115,11 @@ If the build fails, you may need to change the build order by selecting Build wi
 In Skim, the sync setting should be enabled. Go to preferences (`Cmd` + `,`), navigate to the sync tab and check that it has Sublime Text as the preset in PDF-Tex sync support.
 
 When the PDF is compiled in Skim, you can use `Cmd` + `Shift` + click in a location in the PDF and it will take you directly to the source location in Sublime Text for editing.
+
+### Working on and off-line
+Manually working on and offline can be a headache. The University of Oxford offers Professionsl Overleaf memberships to its members, which includes GitHub sync. This makes the work between online and offline editing of the thesis seamless with systematic version control updates. If you are basing your thesis on this template for another university, check if you have this option.
+
+See the documentation for this integration [here](https://docs.overleaf.com/integrations-and-add-ons/git-integration-and-github-synchronization/github) if you want to set this up! 
 
 ### Additional notes - svg files
 Generally, adding png or pdf files as images for figures is easy with `\includegraphics` command. However, if needed, svg files may be added with the svg package. I have included in the preamble of this template the following:
